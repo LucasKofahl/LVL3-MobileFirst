@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --bc-header-background: #8E9AAF;
+  --bc-header-h1: #CBC0D3;
+  --bc-main-background: #EFF1FF;
+  --bc-main-h2: #FEEAFA;
+
+  --fc-main-p:#23053A;
+  --fc-main-h2: #4A4E69;
+
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: var(--bc-main-background);
+}
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 310px;
+  background-color: var(--bc-header-background);
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header .logo img {
+  margin: 3.2rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-family: 'staatliches', sans-serif;
+  font-size: 4rem;
+  line-height: 3.4rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+
+  color: #ffffff;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25); 
+  background-color: var(--bc-header-h1);
+  width: 100em;
+  height: 5rem;
+  text-align: center;
+
+  padding: 8px 0;
+  margin-bottom: 4.3rem;
+}
+
+main p {
+  width: 30rem;
+  height: 7.5rem;
+  margin-bottom: 10rem;
+
+  font-family: 'palanquin', sans-serif;
+  font-size: 2rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  color: var(--fc-main-p);
+  text-align: center;
+  letter-spacing: 0.1rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main img {
+  border-radius: 20px; 
+  object-fit: cover;
+  margin-bottom: 3.2rem;
+}
+
+.ice1,
+.ice2,
+.ice3,
+.ice4,
+.ice5,
+.ice6 {
+  position: relative;
+  
+}
+
+
+
+
+main h2 {
+  font-size: 2rem;
+  font-family: 'staatliches', sans-serif;
+  border-radius: 2rem;
+  border: solid 1px var(--bc-main-h2);
+  background-color: var(--bc-main-h2);
+  color: var(--fc-main-h2);
+  padding: 0 2.4rem 0;
+  position: absolute;
+  right: 1.6rem;
+  top: 1.6rem;
+
+}
+
+.ice1 img{ 
+  width: 32rem;
+  height: 25rem; 
+}
+
+.ice2 img{
+  width: 32rem;
+  height: 45rem;
+}
+
+
+.ice3 img{ 
+  width: 32rem;
+  height: 25rem;
+}
+
+.ice4 img{
+  width: 32rem;
+  height: 45rem;
+}
+
+.ice5 img{ 
+  width: 32rem;
+  height: 25rem;
+}
+
+.ice6 img{
+  width: 32rem;
+  height: 45rem;
+}
+
+footer {
+  font-family: 'staatliches', sans-serif;
+}
+
